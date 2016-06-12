@@ -1,15 +1,15 @@
 @font-face
 {
-  font-family: "Input";
-  src: url('../fonts/InputMonoNarrow-Regular.woff2') format('woff2'),
-       url('../fonts/InputMonoNarrow-Regular.woff') format('woff');
+  font-family: "InputSans";
+  src: url('../fonts/InputSansNarrow-Regular.woff2') format('woff2'),
+       url('../fonts/InputSansNarrow-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face
 {
-  font-family: "Input";
+  font-family: "InputMono";
   src: url('../fonts/InputMonoNarrow-Bold.woff2') format('woff2'),
        url('../fonts/InputMonoNarrow-Bold.woff') format('woff');
   font-weight: bold;
