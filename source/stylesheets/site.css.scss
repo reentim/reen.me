@@ -2,31 +2,54 @@
 @import "normalize";
 @import "font_awesome";
 @import "type";
+@import "cv";
 
 $black: #465c63;
 
 body
 {
-  text-align: center;
   font-family: "InputSans";
-  color: $black;
-  background-color: #b6c5cc;
-  color: white;
-  padding: 1em;
+
+  &.index
+  {
+    text-align: center;
+    color: $black;
+    background-color: #b6c5cc;
+    color: white;
+    padding: 1em;
+  }
+
+  &.cv
+  {
+    color: #333;
+    text-align: left;
+    max-width: 50em;
+    margin: 0 auto;
+    padding-top: 6em;
+    padding: 5vw 1em;
+  }
 }
 
 h1
 {
   font-family: "InputMono", monospace;
-  border: 4px solid white;
-  display: inline-block;
-  padding: 1em;
+
+  .index &
+  {
+    border: 4px solid white;
+    display: inline-block;
+    padding: 1em;
+  }
 }
 
 p
 {
   margin-bottom: 2em;
-  color: $black;
+
+  .index &
+  {
+    color: $black;
+  }
 }
 
 img
@@ -44,9 +67,13 @@ img
 
 a
 {
-  color: $black;
-  color: #a97657;
-  text-decoration: none;
+  color: #333;
+
+  .index &
+  {
+    color: #a97657;
+    text-decoration: none;
+  }
 
   &:hover
   {
@@ -54,23 +81,38 @@ a
   }
 }
 
-ul { padding: 0; }
+ul
+{
+  &.no-bullets
+  {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .index &
+  {
+    padding: 0;
+  }
+}
 
 li
 {
-  display: inline-block;
-  font-size: 40px;
-  padding: 0 0.25em;
-
-  a
+  .index &
   {
-    color: white;
-    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    padding: 0 0.25em;
 
-    &:hover
+    a
     {
-      color: $black;
+      color: white;
       text-decoration: none;
+
+      &:hover
+      {
+        color: $black;
+        text-decoration: none;
+      }
     }
   }
 }
