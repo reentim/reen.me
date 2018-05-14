@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '>= 4.0.0'
-gem 's3_website'
+ruby '2.5.1'
+
+gem 'middleman', '~> 4.2.0'
+gem 's3_website', '~> 3.4.0'
