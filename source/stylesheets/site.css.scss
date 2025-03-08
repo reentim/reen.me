@@ -1,60 +1,35 @@
 @charset "utf-8";
 @import "normalize";
 @import "font_awesome";
-@import "type";
-@import "cv";
 
 $black: #465c63;
 
 body
 {
-  font-family: "InputSans";
-
-  &.index
-  {
-    text-align: center;
-    color: $black;
-    background-color: #b6c5cc;
-    color: white;
-    padding: 1em;
-  }
-
-  &.cv
-  {
-    color: #333;
-    text-align: left;
-    max-width: 50em;
-    margin: 0 auto;
-    padding-top: 6em;
-    padding: 5vw 1em;
-  }
+  background-color: #b6c5cc;
+  color: white;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.1em;
+  padding: 1em;
+  text-align: center;
 }
 
 h1
 {
-  font-family: "InputMono", monospace;
-
-  .index &
-  {
-    border: 4px solid white;
-    display: inline-block;
-    padding: 1em;
-  }
+  border: 6px solid white;
+  display: inline-block;
+  padding: 1em;
 }
 
 p
 {
   margin-bottom: 2em;
-
-  .index &
-  {
-    color: $black;
-  }
+  color: $black;
 }
 
 img
 {
-  border: 4px solid white;
+  border: 6px solid white;
   width: 200px;
   max-width: 100%;
   box-sizing: border-box;
@@ -67,13 +42,8 @@ img
 
 a
 {
-  color: #333;
-
-  .index &
-  {
-    color: #a97657;
-    text-decoration: none;
-  }
+  color: #a97657;
+  text-decoration: none;
 
   &:hover
   {
@@ -83,36 +53,30 @@ a
 
 ul
 {
+  padding: 0;
+
   &.no-bullets
   {
     list-style: none;
     padding-left: 0;
   }
-
-  .index &
-  {
-    padding: 0;
-  }
 }
 
-li
-{
-  .index &
+li {
+  display: inline-block;
+  font-size: 40px;
+  padding: 0 0.25em;
+
+  a
   {
-    display: inline-block;
-    font-size: 40px;
-    padding: 0 0.25em;
+    color: white;
+    text-decoration: none;
 
-    a
+    &:hover
     {
-      color: white;
+      transition: color 200ms ease;
+      color: $black;
       text-decoration: none;
-
-      &:hover
-      {
-        color: $black;
-        text-decoration: none;
-      }
     }
   }
 }
