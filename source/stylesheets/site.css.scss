@@ -12,6 +12,11 @@ body
   font-size: 1.1em;
   padding: 1em;
   text-align: center;
+
+  @media (prefers-color-scheme: dark) {
+    background: #22222a;
+    color: #eee;
+  }
 }
 
 h1
@@ -25,6 +30,10 @@ p
 {
   margin-bottom: 2em;
   color: $black;
+
+  @media (prefers-color-scheme: dark) {
+    color: #ddd;
+  }
 }
 
 img
@@ -76,6 +85,11 @@ li {
     {
       transition: color 200ms ease;
       color: $black;
+
+      @media (prefers-color-scheme: dark) {
+        color: #bd6699;
+      }
+
       text-decoration: none;
     }
   }
