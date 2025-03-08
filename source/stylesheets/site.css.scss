@@ -1,6 +1,5 @@
 @charset "utf-8";
 @import "normalize";
-@import "font_awesome";
 
 $black: #465c63;
 
@@ -78,19 +77,23 @@ li {
 
   a
   {
-    color: white;
+    fill: white;
     text-decoration: none;
 
     &:hover
     {
-      transition: color 200ms ease;
-      color: $black;
+      transition: fill 200ms ease;
+      fill: $black;
 
       @media (prefers-color-scheme: dark) {
-        color: #bd6699;
+        fill: #bd6699;
       }
 
       text-decoration: none;
     }
   }
+}
+
+svg {
+  width: 40px;
 }
