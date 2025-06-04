@@ -1,70 +1,50 @@
 @charset "utf-8";
 @import "normalize";
 
-$black: #465c63;
-
-body
-{
-  background-color: #b6c5cc;
-  color: white;
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 1.1em;
-  padding: 1em;
-  text-align: center;
-
-  @media (prefers-color-scheme: dark) {
-    background: #22222a;
-    color: #eee;
-  }
-}
-
-h1
-{
-  border: 6px solid white;
-  display: inline-block;
-  padding: 1em;
-}
-
-p
-{
-  margin-bottom: 2em;
-  color: $black;
-
-  @media (prefers-color-scheme: dark) {
-    color: #ddd;
-  }
-}
-
-img
-{
-  border: 6px solid white;
-  width: 200px;
-  max-width: 100%;
+* {
   box-sizing: border-box;
+}
 
-  &.round
-  {
+body {
+  background: #012;
+  color: #789;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  height: 100vh;
+  padding: 2rem 0;
+}
+
+h1 {
+  border: 6px solid #345;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 2rem;
+  margin: 0;
+}
+
+p {
+  margin: 2rem 0;
+}
+
+img {
+  width: 300px;
+  max-width: 100%;
+
+  &.round {
     border-radius: 50%;
   }
 }
 
-a
-{
-  color: #a97657;
-  text-decoration: none;
-
-  &:hover
-  {
-    text-decoration: underline;
-  }
+a {
+  color: #34a;
+  text-decoration: underline;
 }
 
-ul
-{
+ul {
   padding: 0;
 
-  &.no-bullets
-  {
+  &.no-bullets {
     list-style: none;
     padding-left: 0;
   }
@@ -75,20 +55,14 @@ li {
   font-size: 40px;
   padding: 0 0.25em;
 
-  a
-  {
-    fill: white;
+  a {
+    fill: #bcd;
     text-decoration: none;
 
     &:hover
     {
       transition: fill 200ms ease;
-      fill: $black;
-
-      @media (prefers-color-scheme: dark) {
-        fill: #bd6699;
-      }
-
+      fill: #268;
       text-decoration: none;
     }
   }
