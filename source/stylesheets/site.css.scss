@@ -71,3 +71,26 @@ li {
 svg {
   width: 40px;
 }
+
+.projects {
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: left;
+
+  h2 a {
+    color: #268;
+  }
+
+  @media screen and (min-width: 700px) {
+    max-width: 600px;
+  }
+
+  .tech {
+    font-size: 80%;
+    margin-top: 0rem;
+
+    span {
+      color: rgb(162, 133, 77);
+    }
+  }
+}
