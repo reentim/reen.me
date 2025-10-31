@@ -3,13 +3,16 @@
 <div class="projects">
   <section>
     <h2>
+      <%= partial(:github_link, locals: { repo: "tmux-cheatsheet" }) %>
       <a href="https://tmux.reen.me">Interactive tmux cheatsheet</a>
     </h2>
     <p class="tech">
       <span>TypeScript</span> &bull;
       <span>Preact</span>
     </p>
-    <img src="/images/tmux-cheatsheet.png" alt="screenshot of application showing virtual keyboard" />
+    <a href="https://tmux.reen.me">
+      <img src="/images/tmux-cheatsheet.png" alt="screenshot of application showing virtual keyboard" />
+    </a>
     <p>
       Displays a virtual keyboard with tmux bindings marked. Responds to
       keyboard events to show which tmux binding would be activated. Care was
@@ -20,31 +23,38 @@
 
   <section>
     <h2>
+      <%= partial(:github_link, locals: { repo: "flashcards" }) %>
       <a href="https://flashcards.fyi">flashcards.fyi</a>
     </h2>
     <p class="tech">
       <span>TypeScript</span> &bull;
       <span>Preact</span>
     </p>
-    <img src="/images/flashcards.png" alt="screenshot of application showing flashcards of national flags" />
+    <a href="https://flashcards.fyi">
+      <img src="/images/flashcards.png" alt="screenshot of application showing flashcards of national flags" />
+    </a>
     <p>
-      Simple flashcard application. I'm planning on revisiting this to add
-      serverless persistence (currently everything lives in localStorage), and
-      to try out some more formal approaches to local-first applications, for
-      example, <a href="https://tanstack.com/db/latest">Tanstack DB</a>, or
-      <a href="https://zero.rocicorp.dev/">Zero</a>.
+      Simple flashcard application. Supports touch events on mobile. I'm
+      planning on revisiting this to add serverless persistence (currently
+      everything lives in localStorage), and to try out some more formal
+      approaches to local-first applications, for example,
+      <a href="https://zero.rocicorp.dev/">Zero</a> and
+      <a href="https://tanstack.com/db/latest">Tanstack DB</a>.
     </p>
   </section>
 
   <section>
     <h2>
+      <%= partial(:github_link, locals: { repo: "space-canvas" }) %>
       <a href="https://space.reen.me">Solar system simulation</a>
     </h2>
     <p class="tech">
       <span>TypeScript</span> &bull;
       <span>Canvas API</span>
     </p>
-    <img src="/images/space-canvas.png" alt="screenshot of application showing the moon orbiting the earth" />
+    <a href="https://space.reen.me">
+      <img src="/images/space-canvas.png" alt="screenshot of application showing the moon orbiting the earth" />
+    </a>
     <p>
        N-body physics simulation and exploration of game development techniques.
     </p>
@@ -52,6 +62,7 @@
 
   <section>
     <h2>
+      <%= partial(:github_link, locals: { repo: "webteam-sinatra" }) %>
       <a href="https://webteam.reen.me">Spaceteam-inspired party game</a>
     </h2>
     <p class="tech">
@@ -59,7 +70,9 @@
       <span>Sinatra</span> &bull;
       <span>Claude Code</span>
     </p>
-    <img src="/images/webteam.png" alt="screenshot of game showing control panel" class="bright" />
+    <a href="https://webteam.reen.me">
+      <img src="/images/webteam.png" alt="screenshot of game showing control panel" class="bright" />
+    </a>
     <p>
       This multiplayer game was created at Ruby Retreat 2025 to try out some
       different methods of organising the output of LLM tools.

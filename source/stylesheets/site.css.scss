@@ -53,17 +53,17 @@ li {
   display: inline-block;
   font-size: 40px;
   padding: 0 0.25em;
+}
 
-  a {
-    fill: #bcd;
+a.fa {
+  fill: #bcd;
+  text-decoration: none;
+
+  &:hover
+  {
+    transition: fill 200ms ease;
+    fill: #268;
     text-decoration: none;
-
-    &:hover
-    {
-      transition: fill 200ms ease;
-      fill: #268;
-      text-decoration: none;
-    }
   }
 }
 
@@ -75,6 +75,12 @@ svg {
   margin: 5rem auto 2rem;
   text-align: left;
 
+  h2 .fa-github {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
   section {
     margin-bottom: 3rem;
     min-height: 300px;
@@ -82,6 +88,11 @@ svg {
 
   a {
     color: #bcd;
+    transition: color 200ms ease;
+
+    &:hover {
+      color: #268;
+    }
   }
 
   @media screen and (min-width: 700px) {
@@ -108,6 +119,7 @@ svg {
 
   img {
     border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
 
     &.bright {
       opacity: 0.85;
